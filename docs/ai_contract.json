@@ -1,0 +1,29 @@
+example 
+
+{
+  "language": "",
+  "persona": "",
+  "intent": "",
+  "location": {
+    "type": "",
+    "name": "",
+    "latitude": null,
+    "longitude": null
+  },
+  "date": "",
+  "time": "",
+  "response_mode": "text"
+}
+
+current_weather
+weather_forecast
+rainfall_forecast
+temperature
+wind
+air_quality
+weather_alert
+travel_weather
+navigation
+general_weather
+
+(can use mausam app api)
