@@ -1,6 +1,6 @@
 Mausam Mitra — MVP
 
-1. AI Avatar
+1. AI Avatar 
 2. Language Selection
 3. Persona Selection
 4. Personalized Homepage
