@@ -1,0 +1,45 @@
+{
+  "name": "Mausam Mitra AI Contract",
+  "version": "1.0",
+  "purpose": "Standard contract between Vaayu AI and the backend/service registry.",
+  "principle": "AI understands and routes requests; it is not the authoritative weather-data source.",
+  "input": {
+    "message": "string",
+    "language": "string",
+    "persona": "string",
+    "location_context": {
+      "type": "current_location | named_location | coordinates | unknown",
+      "name": "string | null",
+      "latitude": "number | null",
+      "longitude": "number | null"
+    },
+    "current_datetime": "ISO-8601 string"
+  },
+  "output": {
+    "language": "string",
+    "persona": "health_conscious | fitness | beachgoers_surfers | travellers | parents_families | agriculture_gardeners | commuters | event_planners | unknown",
+    "intent": "current_weather | weather_forecast | rainfall_forecast | temperature | wind | air_quality | weather_alert | travel_weather | navigation | general_weather | unknown",
+    "location": {
+      "type": "current_location | named_location | coordinates | unknown",
+      "name": "string | null",
+      "latitude": "number | null",
+      "longitude": "number | null"
+    },
+    "date": "today | tomorrow | specific_date | date_range | unknown",
+    "time": "string | null",
+    "service_target": "string | null",
+    "needs_clarification": "boolean",
+    "clarification_question": "string | null",
+    "response_mode": "text | voice | navigation",
+    "confidence": "number between 0 and 1"
+  },
+  "rules": [
+    "Never invent weather information.",
+    "Do not treat the LLM's internal knowledge as current weather data.",
+    "Use trusted backend data or existing Mausam services for weather facts.",
+    "Ask for missing location/date/time information when it is required.",
+    "Use the selected persona as context, but do not force an unrelated intent.",
+    "If the correct Mausam service cannot be identified, ask a clarification question or provide a safe fallback.",
+    "Keep the contract stable between frontend, AI, and backend."
+  ]
+}

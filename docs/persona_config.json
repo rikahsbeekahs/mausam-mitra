@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "description": "MVP personalization configuration for the eight SIH user groups.",
+  "personas": {
+    "health_conscious": {
+      "label": "Health-conscious",
+      "priority_services": [
+        "air_quality",
+        "temperature",
+        "weather_alert",
+        "forecast"
+      ],
+      "common_intents": [
+        "air_quality",
+        "temperature",
+        "weather_forecast",
+        "weather_alert"
+      ]
+    },
+    "fitness": {
+      "label": "Fitness",
+      "priority_services": [
+        "temperature",
+        "rainfall_forecast",
+        "wind",
+        "air_quality",
+        "forecast"
+      ],
+      "common_intents": [
+        "weather_forecast",
+        "rainfall_forecast",
+        "wind",
+        "air_quality"
+      ]
+    },
+    "beachgoers_surfers": {
+      "label": "Beachgoers/Surfers",
+      "priority_services": [
+        "wind",
+        "forecast",
+        "weather_alert",
+        "maps"
+      ],
+      "common_intents": [
+        "weather_forecast",
+        "wind",
+        "weather_alert"
+      ]
+    },
+    "travellers": {
+      "label": "Travellers",
+      "priority_services": [
+        "forecast",
+        "destination_weather",
+        "weather_alert",
+        "maps"
+      ],
+      "common_intents": [
+        "travel_weather",
+        "weather_forecast",
+        "weather_alert",
+        "navigation"
+      ]
+    },
+    "parents_families": {
+      "label": "Parents/Families",
+      "priority_services": [
+        "forecast",
+        "temperature",
+        "rainfall_forecast",
+        "weather_alert",
+        "air_quality"
+      ],
+      "common_intents": [
+        "weather_forecast",
+        "temperature",
+        "rainfall_forecast",
+        "weather_alert",
+        "air_quality"
+      ]
+    },
+    "agriculture_gardeners": {
+      "label": "Agriculture/Gardeners",
+      "priority_services": [
+        "agriculture",
+        "rainfall_forecast",
+        "forecast",
+        "weather_alert",
+        "wind"
+      ],
+      "common_intents": [
+        "rainfall_forecast",
+        "weather_forecast",
+        "wind",
+        "weather_alert"
+      ]
+    },
+    "commuters": {
+      "label": "Commuters",
+      "priority_services": [
+        "forecast",
+        "rainfall_forecast",
+        "weather_alert",
+        "maps",
+        "wind"
+      ],
+      "common_intents": [
+        "weather_forecast",
+        "rainfall_forecast",
+        "weather_alert",
+        "navigation"
+      ]
+    },
+    "event_planners": {
+      "label": "Event Planners",
+      "priority_services": [
+        "forecast",
+        "rainfall_forecast",
+        "wind",
+        "weather_alert",
+        "maps"
+      ],
+      "common_intents": [
+        "weather_forecast",
+        "rainfall_forecast",
+        "wind",
+        "weather_alert"
+      ]
+    }
+  },
+  "personalization_rule": "The selected persona changes the priority and ordering of existing Mausam information/services. It does not create a separate weather-data system."
+}
