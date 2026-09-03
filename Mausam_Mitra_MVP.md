@@ -15,11 +15,8 @@ Mausam Mitra — MVP
 
 Must Work
 
-AI understands user question 
--
-Extracts intent/context
--
-Backend retrieves real weather ( or take the mausam app api )
--
-AI explains real result
--
+1.AI understands user question 
+2.Extracts intent/context
+3.Backend retrieves real weather ( or take the mausam app api )
+4.AI explains real result
+
