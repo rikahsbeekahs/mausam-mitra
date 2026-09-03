@@ -15,7 +15,7 @@ Mausam Mitra — MVP
 
 Must Work
 
-AI understands user question
+AI understands user question 
 ↓
 Extracts intent/context
 ↓
